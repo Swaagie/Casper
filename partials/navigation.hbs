@@ -1,13 +1,36 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-</div>
-<span class="nav-cover"></span>
+<nav class="primary spread">
+  <div class="container">
+    <ul class="grid middle row">
+      <li class="logo">
+        <a href="/">
+          <img src="/image/nodeshop.png" alt="Nodeshop.nl">
+        </a>
+      </li>
+      <li class="box">
+        <a href="/training/">
+          Training
+        </a>
+      </li>
+      <li class="box">
+        <a href="/support/">
+          Support
+        </a>
+      </li>
+      <li class="box">
+        <a href="/ontwikkeling/">
+          Module ontwikkeling
+        </a>
+      </li>
+      <li class="box">
+        <a href="/team/">
+          Team
+        </a>
+      </li>
+      <li class="box">
+        <a href="/blog/">
+          Blog
+        </a>
+      </li>
+    </section>
+  </div>
+</nav>
