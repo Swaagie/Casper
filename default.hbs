@@ -34,11 +34,44 @@
         {{! Everything else gets inserted here }}
         {{{body}}}
 
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Draait op <a href="https://ghost.org">Ghost</a></section>
-        </footer>
+        <footer class="spread primary">
+          <article class="container">
+            <h3>Joint venture</h3>
+            <section class="grid row gutters">
+              <div class="box">
+                <strong>
+                  <a href="http://www.3rd-eden.com" target="_blank">
+                    3rd-Eden
+                  </a>
+                </strong>
+                <small>
+                  <span>kvk: 55743943</span>
+                  <span>e-mail: arnout@nodeshop.nl</span>
+                </small>
+              </div>
 
+              <div class="box">
+                <strong>
+                  <a href="http://www.moveo.io" target="_blank">
+                    Moveo
+                  </a>
+                </strong>
+                <small>
+                  <span>kvk: 56766459</span>
+                  <span>e-mail: martijn@nodeshop.nl</span>
+                </small>
+              </div>
+            </section>
+
+            <section class="grid row gutters">
+              <span class="box">
+                Copyright &copy; {{date format="YYYY"}} - <a href="/" title="terug naar de home pagina">Nodeshop.nl</a>
+              </span>
+            </section>
+
+            <small class="poweredby">Draait op <a href="https://ghost.org">Ghost</a></small>
+          </article>
+        </footer>
     </div>
 
     {{! Ghost outputs important scripts and data with this tag }}
